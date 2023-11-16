@@ -1,6 +1,6 @@
 //---------------Unit 1-----------------------------------------//
 
-// let yourGrade = parseInt("Enter your grade:");
+// let yourGrade = parseInt(prompt("Enter your grade:"));
 
 // if (yourGrade >= 1 && yourGrade <= 3) {
 //   console.log("Neigiamas pazymys!");
@@ -91,7 +91,7 @@
 
 //---------------Unit 5-----------------------------------------//
 
-// let yourAge = parseInt("Enter your age here:");
+// let yourAge = parseInt(prompt("Enter your age here:"));
 
 // if (yourAge <= 18) {
 //   if (yourAge == 18) {
@@ -104,3 +104,85 @@
 // }
 
 //---------------Unit 6-----------------------------------------//
+
+// let yourNumber = parseInt(prompt("Enter number:"));
+
+// if (yourNumber >= 0) {
+//   if (yourNumber == 0) {
+//     console.log("Your number is 0");
+//   } else {
+//     console.log("Your number is positive.");
+//   }
+// } else {
+//   console.log("Your number is negative!!!");
+// }
+
+//---------------Unit 7-----------------------------------------//
+
+// let isJoined = true;
+// let isAdmin = true;
+
+// if (isAdmin == true && isJoined == true) {
+//   console.log("User is ADMIN and joined.");
+// } else if (isAdmin == false && isJoined == true) {
+//   console.log("User is not ADMIN but joined.");
+// } else {
+//   console.log("User is offline.");
+// }
+
+//---------------Unit 8-----------------------------------------//
+
+// let isJoined = true;
+// let isAdmin = true;
+// let isUserAd = true;
+
+// if (isJoined == true) {
+//   if (isAdmin == true) {
+//     console.log("Ad confirmed.");
+//   } else {
+//     console.log("User is 'Simple'.");
+//   }
+//   if (isUserAd == true) {
+//     console.log("You can adjust ad.");
+//   }
+// } else {
+//   console.log("Cant acces");
+// }
+
+//---------------Unit 9-----------------------------------------//
+
+// let userInput = parseInt(prompt("Enter number:"));
+
+// if (userInput > 50) {
+//   console.log(`Your number is: ${userInput}`);
+// } else {
+//   console.log("Your number is less than 50.");
+// }
+
+//---------------Unit 10-----------------------------------------//
+
+let result;
+let sign = "*";
+let numbOne = parseInt(prompt("Enter first number:"));
+let numbTwo = parseInt(prompt("Enter second number:"));
+
+switch (sign) {
+  case "+":
+    result = numbOne + numbTwo;
+    console.log(`Result: ${result}`);
+    break;
+  case "-":
+    result = numbOne - numbTwo;
+    console.log(`Result: ${result}`);
+    break;
+  case "*":
+    result = numbOne * numbTwo;
+    console.log(`Result: ${result}`);
+    break;
+  case "/":
+    result = numbOne / numbTwo;
+    console.log(`Result: ${result}`);
+    break;
+  default:
+    break;
+}
